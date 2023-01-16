@@ -2341,9 +2341,6 @@ int main(int argc, char *argv[])
 	conf->print_packet = true;
 	conf->limit = 0;
 	conf->promiscuous = true;
-#ifdef HAVE_COLLECTDC_H
-	conf->stats.prefix = RS_DEFAULT_PREFIX;
-#endif
 	conf->radius_secret = talloc_strdup(conf, RS_DEFAULT_SECRET);
 	conf->logger = NULL;
 
