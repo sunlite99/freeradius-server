@@ -2347,10 +2347,6 @@ int main(int argc, char *argv[])
 	conf->radius_secret = talloc_strdup(conf, RS_DEFAULT_SECRET);
 	conf->logger = NULL;
 
-#ifdef HAVE_COLLECTDC_H
-	conf->stats.prefix = RS_DEFAULT_PREFIX;
-#endif
-
 	/*
 	 *  Get options
 	 */
